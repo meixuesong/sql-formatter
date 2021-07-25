@@ -20,8 +20,7 @@ fun Suite.behavesLikeSqlFormatter(formatter: SqlFormatter.Formatter) {
       SELECT
         count(*),
         Column1
-      FROM
-        Table1;
+      FROM Table1;
                 """.trimIndent())
     }
 

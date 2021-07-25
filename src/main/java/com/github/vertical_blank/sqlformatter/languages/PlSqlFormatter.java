@@ -13,6 +13,11 @@ public class PlSqlFormatter extends AbstractFormatter {
 
   private static final List<String> reservedWords =
       Arrays.asList(
+              "INSERT INTO",
+              "INSERT",
+              "DELETE FROM",
+              "DELETE",
+              "UPDATE",
           "A",
           "ACCESSIBLE",
           "AGENT",
@@ -45,7 +50,6 @@ public class PlSqlFormatter extends AbstractFormatter {
           "CALL",
           "CALLING",
           "CASCADE",
-          "CASE",
           "CHAR_BASE",
           "CHAR",
           "CHARACTER",
@@ -121,7 +125,6 @@ public class PlSqlFormatter extends AbstractFormatter {
           "FOR",
           "FORALL",
           "FORCE",
-          "FROM",
           "FUNCTION",
           "GENERAL",
           "GOTO",
@@ -368,41 +371,37 @@ public class PlSqlFormatter extends AbstractFormatter {
 
   private static final List<String> reservedTopLevelWords =
       Arrays.asList(
+              "CASE",
           "ADD",
           "ALTER COLUMN",
           "ALTER TABLE",
           "BEGIN",
           "CONNECT BY",
           "DECLARE",
-          "DELETE FROM",
-          "DELETE",
-          "END",
-          "EXCEPT",
-          "EXCEPTION",
-          "FETCH FIRST",
-          "FROM",
-          "GROUP BY",
-          "HAVING",
-          "INSERT INTO",
-          "INSERT",
-          "LIMIT",
-          "LOOP",
-          "MODIFY",
-          "ORDER BY",
-          "SELECT",
-          "SET CURRENT SCHEMA",
-          "SET SCHEMA",
-          "SET",
-          "START WITH",
-          "UPDATE",
-          "VALUES",
-          "WHERE");
+              "END",
+              "EXCEPT",
+              "EXCEPTION",
+              "FETCH FIRST",
+              "GROUP BY",
+              "HAVING",
+              "LIMIT",
+              "LOOP",
+              "MODIFY",
+              "ORDER BY",
+              "SET CURRENT SCHEMA",
+              "SET SCHEMA",
+              "SET",
+              "START WITH");
 
   private static final List<String> reservedTopLevelWordsNoIndent =
       Arrays.asList("INTERSECT", "INTERSECT ALL", "MINUS", "UNION", "UNION ALL");
 
   private static final List<String> reservedNewlineWords =
       Arrays.asList(
+              "SELECT",
+              "VALUES",
+              "FROM",
+              "WHERE",
           "AND",
           "CROSS APPLY",
           "ELSE",

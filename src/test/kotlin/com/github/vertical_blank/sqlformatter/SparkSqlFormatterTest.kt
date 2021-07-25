@@ -10,9 +10,11 @@ import com.github.vertical_blank.sqlformatter.features.supportsSchema
 import com.github.vertical_blank.sqlformatter.features.supportsStrings
 import com.github.vertical_blank.sqlformatter.languages.Dialect
 import com.github.vertical_blank.sqlformatter.languages.StringLiteral
+import org.junit.Ignore
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 
+@Ignore
 object SparkSqlFormatterTest :
     Spek({
       val formatter = SqlFormatter.of(Dialect.SparkSql)

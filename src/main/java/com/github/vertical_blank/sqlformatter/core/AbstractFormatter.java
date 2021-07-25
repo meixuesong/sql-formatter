@@ -194,7 +194,8 @@ public abstract class AbstractFormatter implements DialectConfigurator {
     } else if (Token.isLimit(this.previousReservedToken)) {
       return query;
     } else {
-      return this.addNewline(query);
+      return query;
+//      return this.addNewline(query);
     }
   }
 

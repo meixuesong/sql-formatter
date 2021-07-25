@@ -6,8 +6,11 @@ import com.github.vertical_blank.sqlformatter.languages.Dialect;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+@Disabled
 public class SqlFormatterTest {
 
   @Test
